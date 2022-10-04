@@ -17,7 +17,10 @@ from django import views
 from django.contrib import admin
 from django.urls import path
 from machine_learning import views
+from Blogs import views as blg
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.machine)
+    path('',views.machine),
+    path('dl/',views.deep),
+    path('bl/',blg.blog1)
 ]

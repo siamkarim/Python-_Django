@@ -15,12 +15,16 @@ Including another URLconf
 """
 from django import views
 from django.contrib import admin
-from django.urls import path
-from machine_learning import views
-from Blogs import views as blg
+from django.urls import path,include
+
+
+
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('',views.machine),
-    path('dl/',views.deep),
-    path('bl/',blg.blog1)
+    path('admin/',admin.site.urls),
+    path('',include('machine_learning.urls')),
+    path('about/',include('About_us.urls')),
+    path('blog/',include('Blogs.urls')),
+    path('data/',include('Data_analysis.urls')),
+    path('dp/',include('Deep_learning.urls')),
+    
 ]

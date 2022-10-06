@@ -7,6 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>"this is  {{nm}} hossain program {{pr}} and i am {{age}}"</h1>
+    <h1>"this is  {{nm|capfirst}} hossain program {{pr|lower}} and i am {{age}}"</h1>
+
+    {% if age == 20 %}
+    <h2> this  is if part </h2>
+    {% else %}
+    <h2> this is else part</h2>
+    {% endif %}
 </body>
 </html>

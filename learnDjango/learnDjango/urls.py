@@ -21,9 +21,9 @@ from django.urls import path,include
 
 urlpatterns = [
     path('admin/',admin.site.urls),
-    path('',include('machine_learning.urls')),
+    path('machine/',include('machine_learning.urls')),
     path('about/',include('About_us.urls')),
-    path('blog/',include('Blogs.urls')),
+    path('blg/',include('Blogs.urls')),
     path('data/',include('Data_analysis.urls')),
     path('dp/',include('Deep_learning.urls')),
     

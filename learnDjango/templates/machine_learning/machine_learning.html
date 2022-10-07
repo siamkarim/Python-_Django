@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>"this is  {{nm|capfirst}} hossain program {{pr|lower}} and i am {{age}}"</h1>
-
-    {% if age == 20 %}
-    <h2> this  is if part </h2>
-    {% else %}
-    <h2> this is else part</h2>
-    {% endif %}
-</body>
-</html>
+{% extends 'common_code/base.html'%} 
+{% block title %} Machine learning{% endblock title %}
+ 
+{% block alert %} this is Machine learning page {% endblock alert %}

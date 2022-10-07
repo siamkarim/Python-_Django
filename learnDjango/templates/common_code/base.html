@@ -14,7 +14,7 @@
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">About</a>
+    <a class="navbar-brand" href=" {% url 'ab' %}">About</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -23,24 +23,25 @@
  <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Blogs <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="/blg/blog">Blogs <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"> Data analysis</a>
+          <a class="nav-link" href="/data/data/"> Data analysis</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"> Deep learning</a>
+          <a class="nav-link" href="/dp/deep/"> Deep learning</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          <a class="nav-link dropdown-toggle" href="/machine/m/" id="navbarDropdown" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
           Machine learning
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#"> DT</a>
-            <a class="dropdown-item" href="#">KNM</a>
+            <a class="dropdown-item" href="machine/ds/"> DT</a>
+            <a class="dropdown-item" href="machine/knm/">KNM</a>
+            <a class="dropdown-item" href="machine/rm/">Rendom</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Rendom</a>
+            <a class="dropdown-item" href="/machine/m/">Machine learning</a>
          </div>
         </li>
         

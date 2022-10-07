@@ -1,16 +1,4 @@
-<!DOCTYPE html>
- {% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel ="stylesheet" href ="{% static 'css/style.css' %}"/>
-    <title>Document</title>
-</head>
-<body>
-    <p> hi,{{var|upper}}</p>
-    <img src="{% static 'image/floware.jpg'%}" alt = "logo" />
-    
-</body>
-</html>
+{% extends 'common_code/base.html'%} 
+{% block title %} BLOGS {% endblock title %}
+ 
+{% block alert %} this is blog page {% endblock alert %}

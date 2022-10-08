@@ -3,5 +3,5 @@ from.import views
 urlpatterns = [
    
  
-    path('deep/',views.deep),
+    path('deep/',views.deep,name= 'deeplar'),
 ]

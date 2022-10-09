@@ -9,5 +9,5 @@ def blog1(request):
 
 def showFormsData(request):
     fm =  TeacherRegistrations()
-    fm.order_fields(field_order=['Email','last_name','first_name'])
+   
     return render(request, 'blog/form.html',{'form': fm})

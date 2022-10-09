@@ -8,9 +8,9 @@
 </head>
 <body>
     <form action=""> 
-    <table>
-        {{form}}
-    </table>    
+   {% for lenth in form %} 
+   {{ lenth.label_tag }}<br>
+   {% endfor %}
     <input type="button" value="submit">
     </form>
 

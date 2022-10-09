@@ -7,10 +7,10 @@
     <title>form</title>
 </head>
 <body>
-    <form action=""> 
+    <form action="" method="POST" novalidate > {% csrf_token %} 
   {{form.as_p}}
-    <input type="button" value="submit">
+    <input type="Submit" value="Submit">
     </form>
 
-</body>
+</body> 
 </html>

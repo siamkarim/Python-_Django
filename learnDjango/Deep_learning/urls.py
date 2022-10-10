@@ -4,4 +4,5 @@ urlpatterns = [
    
  
     path('deep/',views.deep,name= 'deeplar'),
+    path('regis/',views.registation)
 ]
